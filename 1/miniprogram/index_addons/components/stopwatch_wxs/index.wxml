@@ -1,0 +1,5 @@
+<wxs module="index" src="./index.wxs"></wxs>
+<view class="stopwatch" catchtap="switch" change:mode="{{index.modeObserver}}" mode="{{mode}}" data-mode="{{mode}}">
+	<view><slot></slot></view>
+	<view>{{text}}</view>
+</view>

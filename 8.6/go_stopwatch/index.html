@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="./wasm_exec_web.js"></script>
+    <script>
+      const go = new Go()
+      WebAssembly.instantiateStreaming(fetch("stopwatch.wasm"), go.importObject).
+        then((result) => {
+          go.run(result.instance)
+        })
+      function call() {
+        console.log("call go method")
+        global.getFormatedMiniSeconds(100000, function (res) {
+          console.log("get res", res);
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="call()">call getFormatedMiniSeconds</button>
+  </body>
+</html>

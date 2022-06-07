@@ -1,0 +1,6 @@
+/* @import "colorui/main.wxss";
+@import "colorui/icon.wxss"; */
+
+page {
+  background: rgb(231, 230, 230);
+}

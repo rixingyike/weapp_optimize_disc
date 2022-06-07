@@ -1,0 +1,6 @@
+<canvas
+  type="2d"
+  id="canvas"
+  style="width: 100%; height: 300px;"
+></canvas>
+<button catchtap="onTap">btn</button>

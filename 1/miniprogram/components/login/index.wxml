@@ -1,0 +1,21 @@
+<!--components/login/index.wxml-->
+<page-container show="{{visible}}" position="bottom"
+  round="{{false}}" overlay duration="300" close-on-slide-down="{{false}}">
+	<view class="detail-page">
+		<view custom-style="min-height:200px;background-color: #efefef;">
+			<view class="picker-view">
+				<view class="picker-view__pane">
+					<text catchtap="close">取消</text>
+				</view>
+				<view style="font-size:17px;font-weight:bold;line-height:30px;border-bottom:1px solid #f2f2f2;padding: 0px 0 20px;width: 100%;color:#353535;text-align: center;">微信登录</view>
+				<image webp style="width: 40px;height: 40px;padding-top: 20px;" src="https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/component_on.png?x-oss-process=image/format,webp"></image>
+				<view style="font-size:17px;font-weight:400;color:#353535;line-height: 40px;">当前小程序申请获取以下权限</view>
+				<view style="font-size:11px;color:#b2b2b2;border-bottom:1px solid #f2f2f2;width: 100%;padding: 0px 0 40px;text-align: center;">● 获得你的公开信息（昵称、头像、地区及性别）</view>
+				<view class="picker-view__btns">
+					<button catchgetuserinfo="login" open-type="getUserInfo" type="primary">确认</button>
+					<button catchtap="close" type="plain">取消</button>
+				</view>
+			</view>
+		</view>
+	</view>
+</page-container>

@@ -1,0 +1,75 @@
+@import "/goods/colorui/main.wxss";
+@import "/goods/colorui/icon.wxss";
+
+page {
+  background: #c7c7c7;
+  line-height: 1.8;
+}
+
+.screen-swiper {
+    min-height: 555rpx;
+}
+
+.canui-head-box {
+    position: fixed;
+    top: 26px;
+    margin-left: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 20px;
+    padding: 4px 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 10;
+}
+
+.canui-head-box navigator {
+    padding: 8px;
+    font-size: 20px;
+    display: initial;
+}
+
+.canui-head-box navigator+navigator {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0 3px;
+    padding: 0 5px;
+    padding-left: 15px;
+}
+
+.canui-goods-box {
+    padding: 10rpx 30rpx;
+}
+.text-red {
+  color:red;
+}
+.text-gray {
+  color: #422d2d;
+}
+
+.canui-xzwz {
+    -webkit-line-clamp: 2;
+}
+
+.cauni-details-box {
+    word-wrap: break-word;
+}
+
+.cu-bar.tabbar.shop .action {
+    width: 100rpx;
+}
+
+.cu-bar.tabbar .action {
+    font-size: 20rpx;
+}
+
+.cu-bar.tabbar .action [class*="icon"] {
+    width: 38rpx;
+}
+
+button {
+    width: auto;
+}
+
+.cauni-details-box image {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}

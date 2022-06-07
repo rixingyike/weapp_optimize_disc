@@ -1,0 +1,19 @@
+.btn {
+  background-color:cornsilk;
+  display: inline-block;
+  position: relative;
+  line-height: 17px;
+  margin: 10px;
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  bottom: -20px;
+  left: -20px;
+  /* background-color:burlywood; */
+}
+.btn__hover {
+  background-color:burlywood;
+}

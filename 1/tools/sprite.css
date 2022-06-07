@@ -1,0 +1,47 @@
+/*!-----The css code below is created by----*/
+.goods,
+.goods_on,
+.list,
+.list_on,
+.my,
+.my_on,
+.nav {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.png)
+}
+.goods {
+  width: 32px;
+  height: 32px;
+  background-position: -66px 0
+}
+.goods_on {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -66px
+}
+.list {
+  width: 32px;
+  height: 32px;
+  background-position: -34px -66px
+}
+.list_on {
+  width: 32px;
+  height: 32px;
+  background-position: -100px 0
+}
+.my {
+  width: 32px;
+  height: 32px;
+  background-position: -100px -34px
+}
+.my_on {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -100px
+}
+.nav {
+  width: 64px;
+  height: 64px;
+  background-position: 0 0
+}

@@ -1,0 +1,83 @@
+<view wx:if="{{loading}}">正在加载</view>
+<!--商品轮播图-->
+<swiper id="goodsSwiper" animation="{{animation}}" class="screen-swiper square-dot bg-white" indicator-dots indicator-color="black" 	indicator-active-color="red" circular autoplay interval="6000" duration="500">
+    <swiper-item wx:for="{{swiperlist}}" wx:key="index">
+        <image webp src="{{item}}" mode='aspectFit'></image>
+    </swiper-item>
+</swiper>
+
+<!--左上角按钮-->
+<view class="canui-head-box" style="top:{{StatusBar-30}}px;">
+    <navigator class='cuIcon-back lg text-gray' open-type="navigateBack" hover-class="none"></navigator>
+    <navigator class='cuIcon-home lg text-gray' open-type="navigateBack" hover-class="none"></navigator>
+</view>
+
+<!--商品价格-->
+<view class="bg-white canui-goods-box" style="padding-top:30rpx;">
+    <text class="text-price text-red text-xl">1000.00</text>
+</view>
+
+<!--商品名称-->
+<view class="bg-white canui-goods-box canui-xzwz text-black">室内大型盆栽绿植龟背竹植物网红客厅大办公大叶（2022.04.06）</view>
+
+<!--商品属性-->
+<view class="bg-white grid col-3 canui-goods-box text-gray text-sm">
+    <view class='padding-sm'>剩余：9999</view>
+    <view class='padding-sm text-center'>销量：98笔</view>
+    <view class='padding-sm text-right'>快递包邮</view>
+</view>
+
+<!--商品详情-->
+<view class="cu-bar bg-white margin-top solid-bottom">
+    <view class='action'>
+        <text class='icon-title text-red'></text>
+        <text>商品详情</text>
+    </view>
+</view>
+
+<view class="bg-white padding cauni-details-box">
+    <text user-select>品牌: 、功能: 吸甲醛 净化空气 美观适用空间: 阳台 书房 客厅颜色分类: 西瓜红 透明 驼色 香槟色 金色 灰色 浅灰色 深灰色 黑色 天蓝色 白色 浅蓝色 桔红色 花色 酒红色 红色 银色 柠檬黄 米白色 明黄色 乳白色 杏色 深棕色 卡其色 浅黄色 玫红色 紫色 姜黄色 1.0米【精品】红塑料原盆 1.0米红塑料原盆 1.1米【精品】懒人智能吸水盆 1.1米懒人智能吸水盆 1.2米【精品】红塑料原盆 1.2米红塑料原盆 1.4米【精品】红塑料原盆 1.2米【精品】白光面瓷盆 1.2米白光面瓷盆 1.2米【精品】树脂金色盆 1.2米树脂金色盆 1.2米【精品】黄草编筐盆 1.2米黄草编筐盆 1.4米【精品】白色方瓷盆 1.4米白色方瓷盆 大白色 1.4米黄草编盆筐 1.4米正方水泥盆 1.4米懒人智能蓄水盆 1.4米白光面瓷盆 1.8米水泥方盆 0.8米红原盆 0.8-1m懒人智能蓄水盆 0.8米草编筐毛重: 约20公斤左右整体高度（含盆高和植物高度）: 141cm(含)-170cm(含)货号: 天堂鸟是否含花盆: 带盆栽好植物类别: 观叶植物开花季节: 无植物品种: 其他难易程度: 非常容易包装体积: 约0.3m
+    </text>
+    <image webp src="https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods1.png?x-oss-process=image/format,webp" style="width: 100%;" mode="aspectFill"></image>
+    <text user-select>绿植是绿色观赏观叶植物的简称，大多产生于热带雨林及亚热带地区，一般为荫生植物。因其耐阴性能强，可作为室内观赏植物在室内种植养护。
+    </text>
+    <image webp src="https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods2.png?x-oss-process=image/format,webp" style="width: 100%;" mode="aspectFill"></image>
+    <text user-select>1：小店支持同城专派养护师傅上门现场为您讲解养护一次，时长不超过1小时，费用为100元，如有需求可联系客服咨询预约
+
+        2: 我们的配送师傅只负责配送上门，有任何养护需求请联系咨询客服。
+    </text>
+    <image webp src="https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods3.png?x-oss-process=image/format,webp" style="width: 100%;" mode="aspectFill"></image>
+
+    <text user-select>划线价格
+
+        指商品的专柜价、吊牌价、正品零售价、厂商指导价或该商品的曾经展示过的销售价等，并非原价，仅供参考。
+
+        未划线价格
+
+        指商品的实时标价，不因表述的差异改变性质。具体成交价格根据商品参加活动，或会员使用优惠券、积分等发生变化，最终以订单结算页价格为准。
+
+        商家详情页（含主图）以图片或文字形式标注的一口价、促销价、优惠价等价格可能是在使用优惠券、满减或特定优惠活动和时段等情形下的价格，具体请以结算页面的标价、优惠条件或活动规则为准。
+
+        此说明仅当出现价格比较时有效，具体请参见《淘宝价格发布规范》。若商家单独对划线价格进行说明的，以商家的表述为准。
+    </text>
+    <image webp src="https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods4.png?x-oss-process=image/format,webp" style="width: 100%;" mode="aspectFill"></image>
+</view>
+
+<!--TabbarBot为适配全面屏的，如果是全面屏，则底部多出一截空白-->
+<view class="cu-bar bg-white tabbar border shop canui-foor-fixed {{TabbarBot=='y'?'canui-tabbar-bottom':''}}">
+    <view class="action text-grey">
+        <view class='icon-shop text-red'></view> 店铺
+    </view>
+    <button class="action text-grey" open-type='contact'>
+        <view class='icon-service'></view> 客服
+    </button>
+    <view class="action text-grey">
+        <view class='icon-cart'></view> 购物车
+    </view>
+    <view class='btn-group'>
+        <button style="width: auto;" class='cu-btn bg-orange round shadow-blur sm'>加入购物车</button>
+        <button style="width: auto;" class='cu-btn bg-red round shadow-blur sm'>立即兑换</button>
+    </view>
+</view>
+
+<tab-bar id="tabBar"></tab-bar>

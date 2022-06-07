@@ -1,0 +1,36 @@
+/* miniprogram/components/tab_bar/index.wxss */
+.bar {
+  position: sticky;
+  bottom: 0 !important;
+  width: 100%;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  justify-content: space-around;
+  background-color: #fff;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.bar .bar__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar .bar__img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+}
+
+.bar .bar__text {
+  font-size: 10px;
+  color: #515151;
+}
+
+.bar .bar__active .bar__text {
+  color: #d81e06;
+}

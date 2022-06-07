@@ -1,0 +1,71 @@
+<scroll-view id="scroller" throttle data-status-bar-height="{{statusBarHeight}}" scroll-y>
+
+  <view class="nav" style="padding-top: {{statusBarHeight}}px">
+    <view class="nickname"><open-data type="userNickName" lang="en"></open-data></view>
+    <view class="search_bar" style="top: {{statusBarHeight}}px">
+      <view class="search_input"><text>请输入商品名</text></view>
+      <icon class="search_icon" type="search" size="15"></icon>
+    </view>
+  </view>
+
+  <view class="info" style="margin-top: {{statusBarHeight}}px">
+    <view class="avatar" style="top: {{((statusBarHeight + 44) - 80) - 5}}px">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    
+    <view class="other">
+      <view>
+        <button catchtap="popup" class="btn" size="mini">登录</button>
+      </view>
+      <view class="follow"><text>0</text> 你关注 / <text>0</text> 关注你</view>
+    </view>
+    <view class="intro" catchtap="_animate"></view>
+
+    <view class="seperate"></view>
+    <!-- 释放跳转的设计 -->
+    <view class="menu">
+      <scroll-view id="scroller2" scroll-x style="width: 100%;" catchscroll="scroll" catchtouchend="touchend" scroll-with-animation scroll-left="{{scrollLeft}}">
+        <view class="menu_wrap" style="width: {{210 * menuList.length + 70}}px">
+          <view wx:for="{{menuList}}" wx:key="index" class="menu_item">
+            <view class="menu_item_image"></view>
+            <view class="menu_item_info">
+              <view class="menu_item_title">{{item.title}}</view>
+              <view class="menu_item_distance">{{item.distance}}米</view>
+            </view>
+          </view>
+          <view id="more" class="menu_item_more" style="left: {{left}}px">
+            <view class="text">{{wording || '查看更多'}}</view>
+            <view id="transform" class="transform"></view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+
+    <view class="seperate"></view>
+
+    <view class="tabs" style="top: {{statusBarHeight + 44}}px">
+      <view class="tab_item">
+        <view>推荐</view>
+        <view class="line selected"></view>
+      </view>
+      <view class="tab_item">
+        <view>评价</view>
+        <view class="line"></view>
+      </view>
+      <view class="tab_item">
+        <view>订单</view>
+        <view class="line"></view>
+      </view>
+    </view>
+    <view class="list">推荐</view>
+    <view class="seperate"></view>
+    <view class="list">评价</view>
+    <view class="seperate"></view>
+    <view class="list">订单</view>
+    <view class="seperate"></view>
+    <view class="list"></view>
+  </view>
+</scroll-view>
+
+<tab-bar id="tabBar"></tab-bar>
+<login id="loginPanel"></login>

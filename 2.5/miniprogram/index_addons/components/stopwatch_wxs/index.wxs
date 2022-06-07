@@ -1,0 +1,51 @@
+var startTime // ES5语法，不能使用let、箭头函数等语法
+var mode = "stop"
+var lastTs = 600000
+
+function start(page, instance) {
+  if(!startTime) startTime = Date.now()
+  var convertTimeStampToString = function (ts) {
+    var ms = (1000 + ~~ts % 1000 + "").slice(1)
+    var s = (100 + ~~(ts / 1000) % 60 + "").slice(1)
+    var m = ~~(ts / 60000)
+    if (m < 10) m = '0' + m
+    var result = m + ':' + s + '.' + ms
+
+    // callMethod是会影响性能的，它也会和逻辑层打交道
+    if (lastTs - ts > 200) {
+      lastTs = ts 
+      page.callMethod("setData", {
+        text: result
+      })
+    }
+      
+    // if (instance.getDataset().mode === "start")
+    if (mode === "start") // 这种方式更好，wxs模块本身是可以持有状态的
+      page.requestAnimationFrame(function () {
+        convertTimeStampToString(600000 - (Date.now() - startTime))
+      })
+  }
+  convertTimeStampToString(600000 - (Date.now() - startTime))
+}
+
+function stop(ownerInstance, instance) {
+  // cancelAnimationFrame方法并不存在，不能调用
+  // page.cancelAnimationFrame(page.getState().requestId)
+}
+
+function modeObserver(newValue, oldValue, ownerInstance, instance) {
+  console.log(newValue) // 该信息在调试区会以[WXS Runtime info]为前缀打印
+  mode = newValue
+  switch (newValue) {
+    case "start":
+      start(ownerInstance, instance)
+    case "stop":
+      stop(ownerInstance, instance)
+    default:
+    //
+  }
+}
+
+module.exports = {
+  modeObserver: modeObserver
+}

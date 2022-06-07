@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "index/pages/index/index",
+    "user/pages/my/index",
+    "goods/pages/detail/index"
+  ],
+  "usingComponents": {
+    "stopwatch": "/index_addons/components/stopwatch_wxs/index"
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "goods/pages/detail/index",
+        "iconPath": "static/icons/list.png",
+        "selectedIconPath": "static/icons/list_on.png",
+        "text": "商品"
+      },
+      {
+        "pagePath": "index/pages/index/index",
+        "iconPath": "static/icons/goods.png",
+        "selectedIconPath": "static/icons/goods_on.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "user/pages/my/index",
+        "iconPath": "static/icons/my.png",
+        "selectedIconPath": "static/icons/my_on.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "subpackages": [
+    {
+      "root": "examples",
+      "pages": [
+        "pages/index/index",
+        "pages/performance/index"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小程序性能优化示例",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

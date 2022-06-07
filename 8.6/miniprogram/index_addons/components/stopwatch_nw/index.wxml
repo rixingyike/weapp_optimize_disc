@@ -1,0 +1,10 @@
+<!-- 优化前 -->
+<!-- miniprogram/index_addons/components/stopwatch_nw/index.wxml -->
+<!-- <view class="stopwatch" catchtap="switch">
+	<view><slot></slot></view>
+	<view>{{text}}</view>
+</view> -->
+
+<view class="stopwatch" catchtap="switch">
+	<slot></slot>{{text}}
+</view>

@@ -1,0 +1,16 @@
+/* index_addons/components/switch_btn/index.wxss */
+.switch-btn {
+  color: black !important;
+  min-width: 70px;
+}
+/*
+.switch-btn:active {
+  color: white !important;
+  background-color: rgb(23, 99, 74) !important;
+}
+*/
+
+.switch-btn__hover {
+  color: white !important;
+  background-color: rgb(23, 99, 74) !important;
+}

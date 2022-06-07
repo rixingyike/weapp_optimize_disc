@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "miniprogram-recycle-view": "^0.1.5",
+    "priority-async-queue": "2.1.1"
+  }
+}

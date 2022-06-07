@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "cos-nodejs-sdk-v5": "2.11.6",
+    "gulp": "^4.0.2",
+    "gulp-cleanwxss": "^1.0.2"
+  }
+}

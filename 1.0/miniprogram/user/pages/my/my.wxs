@@ -1,0 +1,39 @@
+var point1 = 300, point2 = 800
+var hasQueryUnit = false
+
+var onScroll = function (e, ownerInstance) {
+  var scrollTop = e.detail.scrollTop
+  if (!hasQueryUnit) {
+    var getBoundingClientRect = ownerInstance.selectAllComponents(".list")[1].getBoundingClientRect
+    if (getBoundingClientRect) {
+      point1 = ownerInstance.selectAllComponents(".list")[1].getBoundingClientRect().top-736 // 300
+      point2 = ownerInstance.selectAllComponents(".list")[2].getBoundingClientRect().top-736
+    }
+    hasQueryUnit = true
+  }
+
+  // 300评价，800订单
+  function selectTag(targetIndex) {
+    var items = ownerInstance.selectAllComponents(".tab_item .line")
+    var targetItem = items[targetIndex]
+    if (!targetItem.hasClass("selected")) {
+      items.forEach(function (item, index) {
+        if (index === targetIndex)
+          item.addClass("selected")
+        else
+          item.removeClass("selected")
+      })
+    }
+  }
+  if (scrollTop > point2) {
+    selectTag(2)
+  } else if (scrollTop > point1) {
+    selectTag(1)
+  } else {
+    selectTag(0)
+  }
+}
+
+module.exports = {
+  onScroll: onScroll // 这里不能简写
+}

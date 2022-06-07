@@ -1,0 +1,44 @@
+<view class="container">
+  <!-- 滑块视图区 -->
+  <view class="top-banner" data-skeleton-hide="hideBanner">
+    <swiper class="swiper" autoplay indicator-dots indicator-color="black" indicator-active-color="red">
+      <block wx:for="{{swipers}}" wx:key="*this">
+        <swiper-item>
+          <view class="swiper-item {{item.className}}">
+            <image webp mode="aspectFill" src="{{item.banner}}" />
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- 导航区 -->
+  <view class="top-nav" bindtap="onTap" data-skeleton-hide="hideCategory">
+    <navigator class="nav_item" wx:for="{{navs}}" open-type="redirect" url="{{item.page}}">
+      <image webp class="nav_item_image" mode="aspectFit" src="{{item.icon}}"></image>
+      <view class="nav_item_title"><text>{{item.title}}</text></view>
+    </navigator>
+  </view>
+
+  <view style="padding: 15px;text-align: center;">
+    当前主题：{{theme}}
+  </view>
+
+  <!-- enable-back-to-top：iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向 -->
+  <!-- 长列表内容区 -->
+  <view>
+    <block wx:for="{{allList}}" wx:key="index">
+      <view class="row" data-item="{{item}}" data-id="{{item.id}}">
+        <view class="content">
+          <view class="top">
+            <view class="nickname">{{index}}-{{item.title}}</view>
+            <view class="sentence">{{item.text}}</view>
+          </view>
+        </view>
+        <view class="imgview">
+          <image class="img" mode="aspectFill" src="{{item.image}}" />
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

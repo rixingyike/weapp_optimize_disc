@@ -1,0 +1,89 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "compileType": "miniprogram",
+  "appid": "wxc3db312ddf9bcb01",
+  "libVersion": "2.23.4",
+  "setting": {
+    "urlCheck": true,
+    "coverView": true,
+    "es6": true,
+    "postcss": true,
+    "lazyloadPlaceholderEnable": false,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "autoAudits": false,
+    "uglifyFileName": false,
+    "uploadWithSourceMap": true,
+    "enhance": true,
+    "useMultiFrameRuntime": true,
+    "showShadowRootInWxmlPanel": true,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "useStaticServer": true,
+    "showES6CompileOption": false,
+    "checkInvalidKey": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "disableUseStrict": false,
+    "useCompilerPlugins": false,
+    "minifyWXML": true,
+    "ignoreUploadUnusedFiles": true,
+    "compileHotReLoad": false
+  },
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  },
+  "description": "项目配置文件，详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "srcMiniprogramRoot": "miniprogram/",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
+  "skeleton-config": {
+    "global": {
+      "loading": "spin",
+      "text": {
+        "color": "#FFEEEE"
+      },
+      "image": {
+        "shape": "circle",
+        "color": "#FFEFEF",
+        "shapeOpposite": []
+      },
+      "button": {
+        "color": "#EFEFEF",
+        "excludes": []
+      },
+      "pseudo": {
+        "color": "#EFEFEF",
+        "shape": "circle",
+        "shapeOpposite": []
+      },
+      "excludes": [],
+      "remove": [],
+      "empty": [],
+      "hide": [],
+      "grayBlock": [],
+      "cssUnit": "rpx",
+      "decimal": 4,
+      "showNative": false,
+      "backgroundColor": "transparent",
+      "mode": "auto",
+      "templateName": "skeleton"
+    },
+    "pages": {
+      "index/pages/index/index": {
+        "backgroundColor": "#c4eefb"
+      }
+    }
+  },
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%A4%BA%E4%BE%8B",
+  "pluginRoot": "plugin/"
+}

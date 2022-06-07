@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "switch-btn": "/index_addons/components/switch_btn/index",
+    "stopwatch":"/index_addons/components/stopwatch_nw/index",
+    "recycle-view": "miniprogram-recycle-view/recycle-view",
+    "recycle-item": "miniprogram-recycle-view/recycle-item"
+  },
+  "componentPlaceholder": {
+    "stopwatch": "view"
+  }
+}

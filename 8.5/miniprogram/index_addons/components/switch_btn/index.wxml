@@ -1,0 +1,2 @@
+<!--index_addons/components/switch_btn/index.wxml-->
+<button type="primary" class="switch-btn" size="mini" hover-class="switch-btn__hover" catchtap="switch">switch</button>

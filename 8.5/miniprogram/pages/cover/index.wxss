@@ -1,0 +1,18 @@
+/* pages/index2/index.wxss */
+Page {
+  background-color: whitesmoke;
+  color: black;
+}
+view {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  height: 100%;
+  min-height: 500px;
+}
+
+.logo{
+  width: 64px;
+  height: 64px;
+}

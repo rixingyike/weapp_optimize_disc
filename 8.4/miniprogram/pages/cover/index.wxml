@@ -1,0 +1,4 @@
+<view>
+  <image webp class=".logo" src="https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/nav.svg?x-oss-process=image/format,webp"></image>
+  <text>小程序性能优化示例</text>
+</view>
