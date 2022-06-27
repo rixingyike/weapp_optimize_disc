@@ -1,0 +1,15 @@
+/* examples/pages/wxs_animation/index.wxss */
+view {
+	width:10px;
+	height:10px;
+	background:red;
+}
+.css-animation1{
+	animation:animation1 1s;
+}
+
+@keyframes animation1{
+	0% {background:red;width:10px;}
+	50% {background:brown;width:100%;}
+	100% {background:red;width:10px;}
+}

@@ -1,0 +1,16 @@
+<!--examples/pages/wxs_animation/index.wxml-->
+<wxs module="my">
+var onTap = function(event, ownerInstance) {
+  var instance = ownerInstance.selectComponent("#view1") 
+  if (instance.hasClass("css-animation1")) instance.removeClass("css-animation1")
+  instance.setTimeout(function(){
+    instance.addClass("css-animation1")
+  },50)
+  return false;
+}
+module.exports = {
+  onTap: onTap
+};
+</wxs>
+<view id="view1"></view>
+<button catchtap="{{my.onTap}}">使用wxs应用css动画</button>

@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/cover/index"
+  ],
+  "subpackages": [
+    {
+      "root": "examples",
+      "pages": [
+        "pages/index/index",
+        "pages/performance/index",
+        "pages/wxs_animation/index"
+      ]
+    },
+    {
+      "root": "user",
+      "pages": [
+        "pages/my/index"
+      ]
+    },
+    {
+      "root": "goods",
+      "pages": [
+        "pages/detail/index"
+      ],
+      "independent": true
+    },
+    {
+      "root": "index",
+      "pages": [
+        "pages/index/index"
+      ]
+    }
+  ],
+  "darkmode": true,
+  "workers": "workers",
+  "preloadRule": {
+    "goods/pages/detail/index": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pages/cover/index": {
+      "network": "all",
+      "packages": [
+        "index"
+      ]
+    }
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "tab-bar": "/components/tab_bar/index",
+    "login": "/components/login/index"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小程序性能优化示例",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

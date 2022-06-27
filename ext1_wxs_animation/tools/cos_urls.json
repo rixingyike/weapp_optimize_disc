@@ -1,0 +1,86 @@
+[
+  {
+    "path": "/static/icons/goods.png",
+    "name": "goods.png",
+    "imgUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods.png",
+    "webpUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods.png?x-oss-process=image/format,webp"
+  },
+  {
+    "path": "/static/icons/goods_on.png",
+    "name": "goods_on.png",
+    "imgUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods_on.png",
+    "webpUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods_on.png?x-oss-process=image/format,webp"
+  },
+  {
+    "path": "/static/icons/list.png",
+    "name": "list.png",
+    "imgUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/list.png",
+    "webpUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/list.png?x-oss-process=image/format,webp"
+  },
+  {
+    "path": "/static/icons/list_on.png",
+    "name": "list_on.png",
+    "imgUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/list_on.png",
+    "webpUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/list_on.png?x-oss-process=image/format,webp"
+  },
+  {
+    "path": "/static/icons/my.png",
+    "name": "my.png",
+    "imgUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/my.png",
+    "webpUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/my.png?x-oss-process=image/format,webp"
+  },
+  {
+    "path": "/static/icons/my_on.png",
+    "name": "my_on.png",
+    "imgUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/my_on.png",
+    "webpUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/my_on.png?x-oss-process=image/format,webp"
+  },
+  {
+    "path": "/static/icons/nav.png",
+    "name": "nav.png",
+    "imgUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/nav.png",
+    "webpUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/nav.png?x-oss-process=image/format,webp"
+  },
+  {
+    "path": "/static/images/BANNER.png",
+    "name": "BANNER.png",
+    "imgUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/BANNER.png",
+    "webpUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/BANNER.png?x-oss-process=image/format,webp"
+  },
+  {
+    "path": "/static/images/component_on.png",
+    "name": "component_on.png",
+    "imgUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/component_on.png",
+    "webpUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/component_on.png?x-oss-process=image/format,webp"
+  },
+  {
+    "path": "/static/images/goods1.png",
+    "name": "goods1.png",
+    "imgUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods1.png",
+    "webpUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods1.png?x-oss-process=image/format,webp"
+  },
+  {
+    "path": "/static/images/goods2.png",
+    "name": "goods2.png",
+    "imgUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods2.png",
+    "webpUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods2.png?x-oss-process=image/format,webp"
+  },
+  {
+    "path": "/static/images/goods3.png",
+    "name": "goods3.png",
+    "imgUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods3.png",
+    "webpUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods3.png?x-oss-process=image/format,webp"
+  },
+  {
+    "path": "/static/images/goods4.png",
+    "name": "goods4.png",
+    "imgUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods4.png",
+    "webpUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/goods4.png?x-oss-process=image/format,webp"
+  },
+  {
+    "path": "/static/images/nav.svg",
+    "name": "nav.svg",
+    "imgUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/nav.svg",
+    "webpUrl": "https://cloud-1252822131.cos.ap-beijing.myqcloud.com/images/nav.svg?x-oss-process=image/format,webp"
+  }
+]
